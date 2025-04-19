@@ -7,8 +7,13 @@ const condb=require('./config/db');
 condb();
 
 
-app.get('/',(req,res)=>{
-res.send('hello');    
+app.get('/api/test',(req,res)=>{
+res.json({
+    message:'Hello  from backend',
+    data :['Prathamesh','aarv']   
+});  
+
+
 
 
 });
